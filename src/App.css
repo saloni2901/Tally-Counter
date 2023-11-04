@@ -1,0 +1,120 @@
+
+.App {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  background-color: #f0f0f0; 
+}
+table {
+  border-collapse: collapse;
+  margin: 20px;
+  text-align: center;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.tally-counter {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 auto; 
+  position: relative;
+  display: inline-block;
+  background-color: #f0f0f0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.tally-counter::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.tally-counter h2 {
+  font-size: 20px;
+  margin: 0;
+  padding: 5px;
+  background-color: #333;
+  color: white;
+}
+
+.counter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 5px;
+  border-radius: 5px 5px 0 0;
+}
+
+.counter-header h2 {
+  margin: 0;
+}
+
+.counter-header .close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+}
+
+.counter-buttons {
+  flex:auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.counter-button {
+  padding: 10px;
+  background-color: #666;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.counter-button:hover {
+  background-color: #555;
+}
+
+.reset-button {
+  grid-column: span 3;
+  background-color: #ff5555;
+  color: white;
+}
+
+.reset-button:hover {
+  background-color: #ff4444;
+}
+
+.counter-name-input {
+  font-size: 16px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.counter-name-button {
+  margin: 10px;
+  padding: 5px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.counter-name-button:hover {
+  background-color: #222;
+}
+
